@@ -19,29 +19,29 @@ from setuptools import setup, find_packages
 import codecs
 import os
 
-path = os.path.abspath(os.path.dirname(__file__))
+def read_file(filename):
+    with open(os.path.join(os.path.dirname(__file__), filename)) as file:
+        return file.read()
 
-with codecs.open(os.path.join(path, "README.md"), encoding="utf-8") as fh:
-    long_description = "\n" + fh.read()
-
-VERSION = '0.0.1'
-DESCRIPTION = 'A Python implementation of a Code Property Graph.'
-LONG_DESCRIPTION = 'A tool for representing code into a code property graph where the syntax, program and data flow can be queried.'
+VERSION="0.0.2"
+DESCRIPTION="A Python implementation of a Code Property Graph."
+LONG_DESCRIPTION="A tool for representing code into a code property graph where the syntax, program and data flow can be queried."
 
 setup(
-    name="codepropertygraph",
+    name='codepropertygraph',
     version=VERSION,
     license='Apache License 2.0',
-    author="Gacoka Mbui",
-    author_email="<markgacoka@gmail.com>",
+    author='Gacoka Mbui',
+    author_email='<markgacoka@gmail.com>',
     description=DESCRIPTION,
-    long_description_content_type="text/markdown",
-    long_description=long_description,
-    url = 'https://github.com/markgacoka/codepropertygraph',
-    download_url = 'https://github.com/markgacoka/codepropertygraph/releases',
+    long_description=read_file('README.md'),
+    long_description_content_type='text/markdown',
+    url="https://github.com/markgacoka/codepropertygraph",
+    download_url="https://github.com/markgacoka/codepropertygraph/releases",
     packages=find_packages(),
     install_requires=[''],
-    keywords=['cybersecurity', 'static analysis', 'code tokenization', 'property graph'],
+    python_requires='>=3.6.0',
+    keywords='cybersecurity, static analysis, code tokenization, property graph',
     classifiers=[
         "Development Status :: 1 - Planning",
         "Intended Audience :: Developers",
