@@ -37,6 +37,8 @@ setup(
     description=DESCRIPTION,
     long_description_content_type="text/markdown",
     long_description=long_description,
+    url = 'https://github.com/markgacoka/codepropertygraph',
+    download_url = 'https://github.com/markgacoka/codepropertygraph/releases',
     packages=find_packages(),
     install_requires=[''],
     keywords=['cybersecurity', 'static analysis', 'code tokenization', 'property graph'],
