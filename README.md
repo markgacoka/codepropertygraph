@@ -20,7 +20,7 @@ pip install codepropertygraph
 
 ## Usage
 ```
-from codepropertygraph import CPG
+from codepropertygraph.core import CPG
 
 code_cpg = CPG('C:/Users/Gacoka/python_project/')
 code_cpg.files.count
