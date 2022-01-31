@@ -1,6 +1,7 @@
 sphinx
 sphinx-autobuild
 sphinx-autodoc-typehints
+sphinx_rtd_theme==0.4.3
 
 mock
 autodoc
