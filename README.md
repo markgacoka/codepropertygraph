@@ -6,7 +6,7 @@
 <a href="https://github.com/markgacoka/codepropertygraph/graphs/contributors" alt="Maintained"><img alt="Maintenance" src="https://img.shields.io/maintenance/yes/2022?style=flat-square"></a>
 </div>
 
-![Code Property Graph Logo](media/cpg.png)
+![Code Property Graph Logo](https://raw.githubusercontent.com/markgacoka/codepropertygraph/main/media/cpg.png)
 
 
 This library is an implementation of a Code Property Graph as seen in the paper published by [Fabian Yamaguchi](https://fabianyamaguchi.com/) on *Modeling and Discovering Vulnerabilities with [Code Property Graphs](https://www.sec.cs.tu-bs.de/pubs/2014-ieeesp.pdf)*
@@ -20,9 +20,9 @@ pip install codepropertygraph
 
 ## Usage
 ```
-from codepropertygraph.core import CPG
+from codepropertygraph import CPG
 
-code_cpg = CPG('C:/Users/Gacoka/python_project/')
+code_cpg = CPG('C:\Users\Gacoka\Projects\portfolio')
 code_cpg.files.count
 code_cpg.files.l
 
