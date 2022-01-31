@@ -25,6 +25,4 @@ from codepropertygraph import CPG
 code_cpg = CPG('C:\Users\Gacoka\Projects\portfolio')
 code_cpg.files.count
 code_cpg.files.l
-
-code.cpg.methods.l
 ```

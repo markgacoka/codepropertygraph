@@ -17,9 +17,13 @@ class WorkSpaceFiles:
         self.input_path = input_path
 
     def file_count(self, input_path):
-        files_num = 0
         files_list = []
-        for _, _, files in os.walk(r'{}'.format(input_path)):
-            files_num = sum(len(files))
-            files_list.append(files)
-        return files_list, files_num
+        files_count = 0
+        directory_count = 0
+        for base, dirs, files in os.walk(input_path):
+            for directory in dirs:
+                directory_count += 1
+            for single_file in files:
+                files_count += 1
+                files_list.append(single_file)
+        return files_list, (directory_count, files_count)
