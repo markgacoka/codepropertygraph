@@ -1,32 +1,22 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
+*.swp
+*.pyc
 
 # Meta files
 INSTRUCTIONS.md
 
 # Distribution / packaging
-.Python
 build/
 dist/
-lib/
-lib64/
-parts/
 sdist/
 wheels/
-pip-wheel-metadata/
-share/python-wheels/
 *.egg-info/
-.installed.cfg
 *.egg
 MANIFEST.in
-.tox/
-.nox/
 
 # Jupyter Notebook
 .ipynb_checkpoints
-
-# pyenv
-.python-version
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/

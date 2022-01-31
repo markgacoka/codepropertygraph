@@ -31,6 +31,7 @@ setup(
     name='codepropertygraph',
     version=VERSION,
     license='Apache License 2.0',
+    license_files=["LICENSE"],
     author='Gacoka Mbui',
     author_email='<markgacoka@gmail.com>',
     description=DESCRIPTION,
@@ -48,5 +49,8 @@ setup(
         "License :: OSI Approved :: Apache Software License",
         "Operating System :: OS Independent",
         "Programming Language :: Python :: 3",
+        "Topic :: Security",
+        "Topic :: Software Development :: Code Generators",
+        "Topic :: Software Development :: Libraries :: Python Modules"
     ]
 )
