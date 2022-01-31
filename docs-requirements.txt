@@ -1,5 +1,6 @@
 sphinx
 sphinx-autobuild
+sphinxcontrib-napoleon
 sphinx-autodoc-typehints
 sphinx_rtd_theme==0.4.3
 
