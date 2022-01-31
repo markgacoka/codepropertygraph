@@ -1,13 +1,8 @@
 ## Code Property Graph
-<div style="width: 100%; text-align:center">
 <a href="https://github.com/markgacoka/codepropertygraph/blob/main/LICENSE" alt="License"><img src="https://img.shields.io/github/license/markgacoka/codepropertygraph?style=flat-square" /></a>
-
 <a href="https://github.com/markgacoka/codepropertygraph/pulse" alt="Stars"><img alt="Github Stars" src="https://img.shields.io/github/stars/markgacoka/codepropertygraph?style=flat-square" alt="Stars"></a>
-
 <a href="https://github.com/markgacoka/codepropertygraph/releases" alt="Release"><img alt="GitHub release (latest SemVer)" src="https://img.shields.io/github/v/release/markgacoka/codepropertygraph?style=flat-square"></a>
-
 <a href="https://github.com/markgacoka/codepropertygraph/graphs/contributors" alt="Maintained"><img alt="Maintenance" src="https://img.shields.io/maintenance/yes/2022?style=flat-square"></a>
-</div>
 
 ![Code Property Graph Logo](media/cpg.png)
 
