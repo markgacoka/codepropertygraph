@@ -12,15 +12,13 @@
 #
 import os
 import sys
-from datetime import date
-
-file_loc = os.path.split(__file__)[0]
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(file_loc), '.')))
+sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('../..'))
 
 # -- Project information -----------------------------------------------------
 
 project = 'codepropertygraph'
-copyright = u'Copyright 2022 - {0} CySuite'.format(date.today().year)
+copyright = u'Copyright 2022 CySuite'
 author = 'Gacoka Mbui'
 
 # The full version, including alpha/beta/rc tags
@@ -55,3 +53,7 @@ html_theme = 'sphinx_rtd_theme'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+# Logos
+html_favicon = '../../media/cpg_logo.png'
+html_logo = '../../media/cpg_logo.png'
