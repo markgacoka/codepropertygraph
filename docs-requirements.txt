@@ -1,0 +1,6 @@
+sphinx
+sphinx-autobuild
+sphinx-autodoc-typehints
+
+mock
+autodoc

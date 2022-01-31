@@ -15,8 +15,8 @@ wheels/
 *.egg
 MANIFEST.in
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# Documentation
+docs/_build
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/
