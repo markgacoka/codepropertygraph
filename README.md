@@ -4,7 +4,9 @@
 <a href="https://github.com/markgacoka/codepropertygraph/pulse" alt="Stars"><img alt="Github Stars" src="https://img.shields.io/github/stars/markgacoka/codepropertygraph?style=flat-square" alt="Stars"></a>
 <a href="https://github.com/markgacoka/codepropertygraph/releases" alt="Release"><img alt="GitHub release (latest SemVer)" src="https://img.shields.io/github/v/release/markgacoka/codepropertygraph?style=flat-square"></a>
 <a href="https://github.com/markgacoka/codepropertygraph/graphs/contributors" alt="Maintained"><img alt="Maintenance" src="https://img.shields.io/maintenance/yes/2022?style=flat-square"></a>
+<a href="https://github.com/markgacoka/codepropertygraph/blob/main/CONTRIBUTING.md" alt="Contributions Welcome"><img src="https://img.shields.io/badge/contributions-welcome-blue?style=flat-square" /></a>
 </div>
+
 
 ![Code Property Graph Logo](https://raw.githubusercontent.com/markgacoka/codepropertygraph/main/media/cpg.png)
 
@@ -28,3 +30,5 @@ code_cpg = CPG('C:\Users\Gacoka\Projects\portfolio')
 code_cpg.files.count
 code_cpg.files.l
 ```
+
+For first time contributors, read the [CONTRIBUTING](https://github.com/markgacoka/codepropertygraph/blob/main/CONTRIBUTING.md) page.
