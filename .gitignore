@@ -13,6 +13,7 @@ sdist/
 wheels/
 *.egg-info/
 *.egg
+.eggs/
 MANIFEST.in
 
 # Documentation

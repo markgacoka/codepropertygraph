@@ -13,6 +13,8 @@ This library is an implementation of a Code Property Graph as seen in the paper 
 
 A code property graph is a highly efficient data structure designed to mine large codebases for similar programming patterns. The data structure can be loaded into a graph database where properties of code can be queried. Code property graphs are intended to be code-agnostic and highly scalable making it one of the best choices for code representation.
 
+![Code Property Graph Demo](https://raw.githubusercontent.com/markgacoka/codepropertygraph/main/media/cpg_arrow.png)
+
 ## Installation
 ```
 pip install codepropertygraph
