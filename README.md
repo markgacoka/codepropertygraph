@@ -7,7 +7,7 @@
   <a href="https://github.com/markgacoka/codepropertygraph/blob/main/CONTRIBUTING.md" alt="Contributions Welcome"><img align="center" alt="Contributions badge" src="https://img.shields.io/badge/contributions-welcome-blue?style=flat-square"></a>
 </p>
 
-![Code Property Graph Logo](https://raw.githubusercontent.com/markgacoka/codepropertygraph/main/media/cpg.png)
+<p align="center"><img align="center" alt="Code Property Graph Logo" src="https://raw.githubusercontent.com/markgacoka/codepropertygraph/main/media/cpg.png"></p>
 
 This library is an implementation of a Code Property Graph as seen in the paper published by [Fabian Yamaguchi](https://fabianyamaguchi.com/) on *Modeling and Discovering Vulnerabilities with [Code Property Graphs](https://www.sec.cs.tu-bs.de/pubs/2014-ieeesp.pdf)*
 
