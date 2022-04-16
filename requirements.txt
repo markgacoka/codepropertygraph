@@ -1,6 +1,16 @@
+atomicwrites==1.4.0
+attrs==21.4.0
 certifi==2021.10.8
+colorama==0.4.4
+iniconfig==1.1.1
 networkx==2.8
 numexpr==2.8.1
+packaging==21.3
+pluggy==1.0.0
+py==1.11.0
 pyorient==1.5.5
+pyparsing==3.0.8
+pytest==7.1.1
 tables==3.7.0
+tomli==2.0.1
 wincertstore==0.2
