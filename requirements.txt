@@ -1,0 +1,6 @@
+certifi==2021.10.8
+networkx==2.8
+numexpr==2.8.1
+pyorient==1.5.5
+tables==3.7.0
+wincertstore==0.2
