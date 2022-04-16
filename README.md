@@ -29,4 +29,11 @@ code_cpg.files.count
 code_cpg.files.l
 ```
 
+## Testing
+**Note:** Tested only on Windows 10, 11
+```
+pip install -r requirements.txt
+pytest tests
+```
+
 For first time contributors, read the [CONTRIBUTING](https://github.com/markgacoka/codepropertygraph/blob/main/CONTRIBUTING.md) page.
