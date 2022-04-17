@@ -37,18 +37,18 @@ print(code_cpg.files.count)
 ```
 
 ## Running from Source
-### Setting up OrientDB locally
-1. Download [OrientDB v3.2.5 GA Community Edition](https://orientdb.org/download) from the OrientDB website.
-  If the latest version has changed, download the zip file [here](https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.5/orientdb-community-3.2.5.zip).
-2. Unzip the download and copy `orientdb-community-3.2.5` to the `C:\` drive.
-3. Add the folder path to your environment variables i.e. `Control Panel > Edit the system environment variables > Environment Variables > User variables for {USERNAME} > C:\orientdb-community-3.2.5\bin`
-  ![Path description](media/orient_path.png)
-4. Set OrientDB home environment variable in PATH i.e `ORIENTDB_HOME` = `C:\orientdb-community-3.2.5`
-  ![OrientDBHome path](media/path.png)
-5. Open CMD and type in `server`. 
-  - This will run the `server.exe` file that is inside the `C:\orientdb-community-3.2.5\bin` folder on port `2424`. You should see something like this:
-  ![CMD output](media/cmd.png)
-6. Now that the server is running, you can install and run the codepropertygraph module.
+### Setting up Neo4J locally
+1. Download [Neo4J Desktop v4.4.5](https://neo4j.com/download/) to create local graph databases locally and remotely from your desktop.
+  If the latest version has changed, use this link to download the [version]((https://neo4j.com/download/neo4j-desktop/?edition=desktop&flavour=winstall64&release=1.4.15&offline=true)) used for development.
+2. Create a **new project** and a **new local graph database** as shown below. It might take a few moments to finish loading.
+  ![Create graph database](media/create_project.png)
+3. Start the database. Make sure the DB is active before heading onto the [Installation](#installation-1) and [Running the application](#running-the-application) sections.
+
+| Starting the database | Active Database |
+|-----------------------|-----------------|
+| ![Start the DB](media/start_db.png) | ![Active DB](media/db_active.png) |
+
+If you would like to use OrientDB, here are the [instructions](/ORIENTDB.md).
 
 ### Installation
 To install the repository, you need to clone it and run it inside a virtual environment. Running `main.py` generates a Code Property Graph of the simple addition script inside `examples/` and saves it to `output/`.
@@ -59,7 +59,10 @@ cd codepropertygraph
 conda create --name codepropertygraph python=3.8
 conda activate codepropertygraph
 pip install -r requirements.txt
+```
 
+### Running the Application
+```
 python main.py
 ```
 
