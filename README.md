@@ -15,25 +15,62 @@ A code property graph is a highly efficient data structure designed to mine larg
 
 ![Code Property Graph Demo](https://raw.githubusercontent.com/markgacoka/codepropertygraph/main/media/cpg_arrow.png)
 
-## Installation
+## Running as a Library
+### Installation
+Requires:
+- `python==3.8`
+- `pip3`
 ```
 pip install codepropertygraph
 ```
 
-## Usage
-```
+### Using the code as a library
+```python
 from codepropertygraph import CPG
 
-code_cpg = CPG('C:\Users\Gacoka\Projects\portfolio')
-code_cpg.files.count
-code_cpg.files.l
+PATH = 'C:\Users\ExampleUser\Projects\portfolio'
+
+code_cpg = CPG(PATH)
+print(code_cpg.files.count)
+
+> 1
+```
+
+## Running from Source
+### Setting up OrientDB locally
+1. Download [OrientDB v3.2.5 GA Community Edition](https://orientdb.org/download) from the OrientDB website.
+  If the latest version has changed, download the zip file [here](https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.5/orientdb-community-3.2.5.zip).
+2. Unzip the download and copy `orientdb-community-3.2.5` to the `C:\` drive.
+3. Add the folder path to your environment variables i.e. `Control Panel > Edit the system environment variables > Environment Variables > User variables for {USERNAME} > C:\orientdb-community-3.2.5\bin`
+  ![Path description](media/orient_path.png)
+4. Set OrientDB home environment variable in PATH i.e `ORIENTDB_HOME` = `C:\orientdb-community-3.2.5`
+  ![OrientDBHome path](media/path.png)
+5. Open CMD and type in `server`. 
+  - This will run the `server.exe` file that is inside the `C:\orientdb-community-3.2.5\bin` folder on port `2424`. You should see something like this:
+  ![CMD output](media/cmd.png)
+6. Now that the server is running, you can install and run the codepropertygraph module.
+
+### Installation
+To install the repository, you need to clone it and run it inside a virtual environment. Running `main.py` generates a Code Property Graph of the simple addition script inside `examples/` and saves it to `output/`.
+```
+git clone https://github.com/markgacoka/codepropertygraph.git
+cd codepropertygraph
+
+conda create --name codepropertygraph python=3.8
+conda activate codepropertygraph
+pip install -r requirements.txt
+
+python main.py
 ```
 
 ## Testing
-**Note:** Tested only on Windows 10, 11
+**Note:** Tested only on Windows 10, 11.
 ```
-pip install -r requirements.txt
 pytest tests
+
+-- OR --
+
+python tests/test_example.py
 ```
 
 For first time contributors, read the [CONTRIBUTING](https://github.com/markgacoka/codepropertygraph/blob/main/CONTRIBUTING.md) page.
