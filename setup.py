@@ -43,7 +43,7 @@ setup(
     build_requires=['python3-pbr'],
     setup_requires=['wheel'],
     py_modules=['codepropertygraph'],
-    python_requires='>=3.6.0',
+    python_requires='>=3.9.0',
     keywords='cybersecurity, static analysis, code tokenization, property graph',
     classifiers=[
         "Development Status :: 1 - Planning",
