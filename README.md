@@ -18,7 +18,7 @@ A code property graph is a highly efficient data structure designed to mine larg
 ## Running as a Library
 ### Installation
 Requires:
-- `python==3.8`
+- `python==3.9.12`
 - `pip3`
 ```
 pip install codepropertygraph
