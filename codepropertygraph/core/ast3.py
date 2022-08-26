@@ -39,8 +39,8 @@ class AstGraphGenerator(object):
                         self.visit(item)
 
             elif isinstance(value, ast.AST):
-                # print("Node: ", node.__dict__)
-                # print("Value: ", value.__dict__)
+                print("Node: ", node.__dict__)
+                print("Value: ", value.__dict__)
                 node_source = self._getid(node)
                 value_source = self._getid(value)
                 # self.graph[node_source].append(value_source)
@@ -52,9 +52,7 @@ import ast
 
 code = """
 # Adds two numbers and returns the result
-def addition(x, y):
-    result = x + y
-    return result
+a = 1 + 2
 """
 tree = ast.parse(code)
 generator = AstGraphGenerator(code)
