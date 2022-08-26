@@ -1,5 +1,5 @@
 import ast
-import pprint 
+import pprint
 import astpretty
 
 # with open("examples/addition.py", "r") as source:
@@ -27,13 +27,7 @@ def generate_AST(PATH):
 
 
 if __name__ == '__main__':
-    PATH = "examples/addition.py"
+    PATH = "examples/small.py"
     tree = generate_AST(PATH)
     pp = pprint.PrettyPrinter(depth=4)
     pp.pprint(tree)
-
-
-        
-        
-    
-
