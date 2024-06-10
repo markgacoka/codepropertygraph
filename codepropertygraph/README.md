@@ -5,13 +5,13 @@
   <a href="https://github.com/markgacoka/codepropertygraph/graphs/contributors" alt="Maintained"><img align="center" alt="Maintenance badge" src="https://img.shields.io/maintenance/yes/2022?style=flat-square"></a>
 </p>
 
-<p align="center"><img align="center" alt="Code Property Graph Logo" src="cpg.png"></p>
+<p align="center"><img align="center" alt="Code Property Graph Logo" src="https://raw.githubusercontent.com/markgacoka/codepropertygraph/f86397bccb0e6077b08d3ef2bad6e08e1729912c/codepropertygraph/cpg.png"></p>
 
 This library is an implementation of a Code Property Graph as seen in the paper published by [Fabian Yamaguchi](https://fabianyamaguchi.com/) on *Modeling and Discovering Vulnerabilities with [Code Property Graphs](https://www.sec.cs.tu-bs.de/pubs/2014-ieeesp.pdf)*
 
 A code property graph is a highly efficient data structure designed to mine large codebases for similar programming patterns. The data structure can be loaded into a graph database where properties of code can be queried. Code property graphs are intended to be code-agnostic and highly scalable making it one of the best choices for code representation.
 
-![Code Property Graph Demo](cpg_arrow.png)
+![Code Property Graph Demo](https://raw.githubusercontent.com/markgacoka/codepropertygraph/main/codepropertygraph/cpg_arrow.png)
 
 ## Running as a Library
 ### Installation
