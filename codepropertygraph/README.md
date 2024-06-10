@@ -34,18 +34,6 @@ print(graph)
 > Graph(Nodes(a, b), Edges([a, b]))
 ```
 
-## Running from Source
-### Setting up Neo4J locally
-1. Download [Neo4J Desktop v4.4.5](https://neo4j.com/download/) to create local graph databases locally and remotely from your desktop.
-  If the latest version has changed, use this link to download the [version]((https://neo4j.com/download/neo4j-desktop/?edition=desktop&flavour=winstall64&release=1.4.15&offline=true)) used for development.
-2. Create a **new project** and a **new local graph database** as shown below. It might take a few moments to finish loading.
-  ![Create graph database](media/create_project.png)
-3. Start the database. Make sure the DB is active before heading onto the [Installation](#installation-1) and [Running the application](#running-the-application) sections.
-
-| Starting the database | Active Database |
-|-----------------------|-----------------|
-| ![Start the DB](media/start_db.png) | ![Active DB](media/db_active.png) |
-
 ### Installation
 To install the repository, you need to clone it and run it inside a virtual environment. Running `main.py` generates a Code Property Graph of the simple addition script inside `examples/` and saves it to `output/`.
 ```

@@ -1,11 +1,3 @@
-'''
-setup.py - a setup script
-Copyright (C) 2024 CySuite
-
-Author:
-    Gacoka Mbui <markgacoka@gmail.com>
-'''
-
 from setuptools import setup, find_packages
 import os
 
@@ -13,9 +5,9 @@ def read_file(filename):
     with open(os.path.join(os.path.dirname(__file__), filename)) as file:
         return file.read()
 
-VERSION="0.0.9"
-DESCRIPTION="A Python implementation of a Code Property Graph."
-LONG_DESCRIPTION="A tool for representing code into a code property graph where the syntax, program and data flow can be queried."
+VERSION = "0.1.0"
+DESCRIPTION = "A Python implementation of a Code Property Graph."
+LONG_DESCRIPTION = read_file('README.md')
 
 setup(
     name='codepropertygraph',
@@ -23,17 +15,19 @@ setup(
     license='Apache License 2.0',
     license_files=["LICENSE"],
     author='Gacoka Mbui',
-    author_email='<markgacoka@gmail.com>',
+    author_email='markgacoka@gmail.com',
     description=DESCRIPTION,
-    long_description=read_file('README.md'),
+    long_description=LONG_DESCRIPTION,
     long_description_content_type='text/markdown',
     url="https://github.com/markgacoka/codepropertygraph",
     download_url="https://github.com/markgacoka/codepropertygraph/releases",
-    packages=find_packages('codepropertygraph'),
-    install_requires=[''],
-    build_requires=['python3-pbr'],
+    packages=find_packages(),
+    install_requires=[
+        "neo4j",
+        "python-dotenv",
+        "pytest"
+    ],
     setup_requires=['wheel'],
-    py_modules=['codepropertygraph'],
     python_requires='>=3.9.0',
     keywords='cybersecurity, static analysis, code tokenization, property graph',
     classifiers=[
