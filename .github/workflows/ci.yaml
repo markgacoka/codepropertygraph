@@ -1,4 +1,4 @@
-name: Codepropertygraphs Test
+name: CPG Test
 
 on: [push, pull_request]
 

@@ -1,7 +1,9 @@
-import os
+import os, sys
 from dotenv import load_dotenv
 from unittest.mock import patch, MagicMock
 from neo4j.exceptions import ServiceUnavailable
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from codepropertygraph.engine import get_neo4j_connection
 
 # Load environment variables from .env file
