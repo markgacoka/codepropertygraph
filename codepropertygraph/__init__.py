@@ -1,4 +1,1 @@
-import sys
-sys.dont_write_bytecode = True
-
-from core.cpgraph import CPG
+from .engine import get_neo4j_connection

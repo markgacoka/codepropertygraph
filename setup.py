@@ -1,15 +1,6 @@
 '''
 setup.py - a setup script
-Copyright (C) 2022 CySuite
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-    http://www.apache.org/licenses/LICENSE-2.0
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+Copyright (C) 2024 CySuite
 
 Author:
     Gacoka Mbui <markgacoka@gmail.com>
@@ -22,7 +13,7 @@ def read_file(filename):
     with open(os.path.join(os.path.dirname(__file__), filename)) as file:
         return file.read()
 
-VERSION="0.0.8"
+VERSION="0.0.9"
 DESCRIPTION="A Python implementation of a Code Property Graph."
 LONG_DESCRIPTION="A tool for representing code into a code property graph where the syntax, program and data flow can be queried."
 

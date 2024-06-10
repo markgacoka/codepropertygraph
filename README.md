@@ -1,10 +1,8 @@
 ## Code Property Graph
 <p align="center">
-  <a href="https://github.com/markgacoka/codepropertygraph/blob/main/LICENSE" alt="License"><img align="center" alt="Apache license badge" src="https://img.shields.io/github/license/markgacoka/codepropertygraph?style=flat-square"></a>
   <a href="https://github.com/markgacoka/codepropertygraph/pulse" alt="Stars"><img align="center" alt="Github Stars badge" src="https://img.shields.io/github/stars/markgacoka/codepropertygraph?style=flat-square"></a>
   <a href="https://github.com/markgacoka/codepropertygraph/releases" alt="Release"><img align="center" alt="GitHub release (latest SemVer) badge" src="https://img.shields.io/github/v/release/markgacoka/codepropertygraph?style=flat-square"></a>
   <a href="https://github.com/markgacoka/codepropertygraph/graphs/contributors" alt="Maintained"><img align="center" alt="Maintenance badge" src="https://img.shields.io/maintenance/yes/2022?style=flat-square"></a>
-  <a href="https://github.com/markgacoka/codepropertygraph/blob/main/CONTRIBUTING.md" alt="Contributions Welcome"><img align="center" alt="Contributions badge" src="https://img.shields.io/badge/contributions-welcome-blue?style=flat-square"></a>
 </p>
 
 <p align="center"><img align="center" alt="Code Property Graph Logo" src="https://raw.githubusercontent.com/markgacoka/codepropertygraph/main/media/cpg.png"></p>
@@ -18,7 +16,7 @@ A code property graph is a highly efficient data structure designed to mine larg
 ## Running as a Library
 ### Installation
 Requires:
-- `python==3.9.12`
+- `Python 3`
 - `pip3`
 ```
 pip install codepropertygraph
@@ -28,12 +26,12 @@ pip install codepropertygraph
 ```python
 from codepropertygraph import CPG
 
-PATH = 'C:\Users\ExampleUser\Projects\portfolio'
+code = """a = 1; b = 2; print(a + b)"""
 
-code_cpg = CPG(PATH)
-print(code_cpg.files.count)
+graph = CPG(code)
+print(graph)
 
-> 1
+> Graph(Nodes(a, b), Edges([a, b]))
 ```
 
 ## Running from Source
@@ -48,16 +46,14 @@ print(code_cpg.files.count)
 |-----------------------|-----------------|
 | ![Start the DB](media/start_db.png) | ![Active DB](media/db_active.png) |
 
-If you would like to use OrientDB, here are the [instructions](/ORIENTDB.md).
-
 ### Installation
 To install the repository, you need to clone it and run it inside a virtual environment. Running `main.py` generates a Code Property Graph of the simple addition script inside `examples/` and saves it to `output/`.
 ```
 git clone https://github.com/markgacoka/codepropertygraph.git
 cd codepropertygraph
 
-conda create --name codepropertygraph python=3.8
-conda activate codepropertygraph
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -67,13 +63,30 @@ python main.py
 ```
 
 ## Testing
-**Note:** Tested only on Windows 10, 11.
+Run all tests
 ```
 pytest tests
-
--- OR --
-
-python tests/test_example.py
 ```
+
+## Updating Library
+
+1. Change the version number
+```
+--> VERSION="0.0.9"
+DESCRIPTION="A Python implementation of a Code Property Graph."
+LONG_DESCRIPTION="A tool for ..."
+
+setup(
+    name='codepropertygraph',
+    version=VERSION,
+```
+
+2. Upload to Pypi
+```
+python setup.py sdist bdist_wheel
+pip install twine
+twine upload dist/*
+```
+
 
 For first time contributors, read the [CONTRIBUTING](https://github.com/markgacoka/codepropertygraph/blob/main/CONTRIBUTING.md) page.
