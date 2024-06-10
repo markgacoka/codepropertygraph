@@ -28,4 +28,4 @@ jobs:
       env:
         NEO4J_USERNAME: ${{ secrets.NEO4J_USERNAME }}
         NEO4J_PASSWORD: ${{ secrets.NEO4J_PASSWORD }}
-      run: pytest codepropertygraph/tests
+      run: pytest

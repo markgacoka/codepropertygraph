@@ -1,5 +1,4 @@
 import os
-import pytest
 from dotenv import load_dotenv
 from unittest.mock import patch, MagicMock
 from neo4j.exceptions import ServiceUnavailable

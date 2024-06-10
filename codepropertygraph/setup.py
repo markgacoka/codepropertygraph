@@ -5,7 +5,7 @@ def read_file(filename):
     with open(os.path.join(os.path.dirname(__file__), filename)) as file:
         return file.read()
 
-VERSION = "0.1.2"
+VERSION = "0.1.3"
 DESCRIPTION = "A Python implementation of a Code Property Graph."
 LONG_DESCRIPTION = read_file('README.md')
 
