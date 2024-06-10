@@ -17,20 +17,14 @@ python main.py
 ## Testing
 Run all tests
 ```
-pytest tests
+pytest codepropertygraph/tests
 ```
 
 ## Updating Library
 
-1. Change the version number
+1. Upgrade the version number in `codepropertygraph/setup.py`
 ```
---> VERSION="0.0.9"
-DESCRIPTION="A Python implementation of a Code Property Graph."
-LONG_DESCRIPTION="A tool for ..."
-
-setup(
-    name='codepropertygraph',
-    version=VERSION,
+--> VERSION="x.x.x"
 ```
 
 2. Upload to Pypi
@@ -39,5 +33,6 @@ python setup.py sdist bdist_wheel
 twine upload dist/*
 ```
 
+If API token is requested, go to `.env` as `PYPI_API_TOKEN`.
 
 For first time contributors, read the [CONTRIBUTING](https://github.com/markgacoka/codepropertygraph/blob/main/CONTRIBUTING.md) page.
